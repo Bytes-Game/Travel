@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html style="height: 650px;background: linear-gradient(to bottom, #36a0fd, #c6bf54);">
+    <head>
+        <title>Stays</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body{
+                overflow: hidden;
+            }
+           #big{
+                position: absolute;
+                top: 50%;
+                left: 30%;
+                width: 1000px;
+                height: 600px;
+                transform: translate(-50%, -50%);
+                background-color: aqua;
+                box-shadow: -3px 8px 5px 5px black;
+                border-radius: 5%;
+                }
+           .short{
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            transform: translate(0, -50%);
+            border-radius: 20px;
+            background-size: cover;
+            display: inline-block;
+            transition: 0.5s;
+           }
+           .short:nth-child(1){
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 5%;
+           }
+           .short:nth-child(2){
+            left: 90%;
+            top: 50%;
+           }
+           .short:nth-child(3){
+            left: calc(90% + 220px);
+            top: 80%;
+        }
+        .short:nth-child(4){
+            left: calc(90% + 220px);
+            top: 20%;
+        }
+        .short:nth-child(n+5){
+            left: calc(68% + 660px);
+            opacity: 0.5;
+            top: 50%;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="big">
+        <div id="small">
+            <div class="short" style="background-image: url(./stays/pic1.jpg);">   
+            </div>
+            <div class="short" style="background-image: url(./stays/pic2.jpg);">
+            </div>
+            <div class="short" style="background-image: url(./stays/pic3.jpg);">
+            </div>
+            <div class="short" style="background-image: url(./stays/pic4.jpg);">
+            </div>
+            <div class="short" style="background-image: url(./stays/pic5.jpg);">
+            </div>
+            <div class="short" style="background-image: url(./image10.png);">   
+            </div>
+        </div>
+        </div>
+        <button id="next">next</button>
+        <button id="prev">prev</button>
+        <script>
+            apply();
+            const next=document.getElementById('next');
+            const prev=document.getElementById('prev');
+            next.addEventListener('click', (e)=>{
+                const short= document.getElementsByClassName('short');
+                document.getElementById('small').appendChild(short[0]);
+            });
+            prev.addEventListener('click', (e)=>{
+                const short= document.getElementsByClassName('short');
+                document.getElementById('small').prepend(short[short.length - 1]);
+            });
+            // function again(event){
+            //     var index = Array.from(event.target.parentNode.children).indexOf(event.target);
+            //     const short= document.getElementsByClassName('short');
+            //     const add=document.getElementById('small');
+            //     add.append(short[0]);
+            // }
+            // function apply(){
+            //     const short= document.getElementsByClassName('short');
+            //     for(let i=0; i<short.length;i++){
+            //         short[i].addEventListener('click', swap);
+            //     }
+            // }
+            function apply(){
+            const elements= document.getElementsByClassName('short');
+            Array.from(elements).forEach(function (element){
+                element.addEventListener('click', swap);
+            })
+            }
+            function swap(event){
+                const short= document.getElementsByClassName('short');
+              
+                var index = Array.from(event.target.parentNode.children).indexOf(event.target);
+                const add =document.getElementById('small');
+
+                add.prepend(short[index]);
+
+            }
+        
+//             function getIndex(event) {
+//   var index = Array.from(event.target.parentNode.children).indexOf(event.target);
+//   document.getElementsByClassName('short')[index].addEventListener('click', (e)=>{
+//                const short= document.getElementsByClassName('short');
+//                const add =document.getElementById('small');
+//                add.prepend(short[index]);
+//                  add.appendChild(short[0]);
+//          });   
+
+// }
+    //         indexes.forEach(ind =>{
+    //             ind.addEventListener('click', function getIndex(e){
+    //             var index= Array.from(e.target.parentNode.children).indexOf(e.target); 
+    //     document.getElementsByClassName('short')[index].addEventListener('click', (e)=>{
+    //             const short= document.getElementsByClassName('short');
+    //             document.getElementById('small').appendChild(short[0]);
+    //         });   
+    //         });
+    //    } );
+            // document.getElementsByClassName('short')[index].addEventListener('click', (e)=>{
+            //     const short= document.getElementsByClassName('short');
+            //     document.getElementById('small').appendChild(short[0]);
+            // });   
+            </script>
+    </body>
+</html>

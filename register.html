@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Register </title>
+<script src='register_js.js'></script>
+<style>
+.blur{
+        background-image: url("registerbg.jpg");
+        top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    filter: blur(5px);
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+    }
+.flex{
+    display: flex;
+    padding-bottom: 20px;
+}
+.left{
+    position: relative;
+    left: 20px;
+}
+input{
+    padding: 5px;
+    font-size: medium;
+}
+</style>
+</head>
+<body>
+    <div class="blur"></div>
+    <span style="display: flex; background-color: white; width: 900px; margin-right: auto; margin-left: auto; margin-top: 70px; box-shadow: 0 0 5px 5px aliceblue;">
+        
+                <div style=" width:430px;"> <img src="computer_guy.jpg" width='406px;' height="478px;"></div>
+    <div>
+           
+        <h1> Registration</h1>
+        <form action="travel.php" method="POST">
+        <hr style="width: 40px; height: 5px; border-radius: 10px; background-color: #a862ee; margin-top: -15px; margin-bottom: 30px; margin-left:0;">
+        <div class="flex">
+            <div>
+                <label for="fname" style="font-weight: 900;">First Name </label><br>
+    <input type="text"placeholder="Enter first name" id='fname'name='fname'>
+        </div>
+        <div class='left'>
+    <label for="lname" style="font-weight: 900;">Last Name  </label><br>
+    <input type="text"placeholder="Enter last name" id='lname' name="lname">
+</div>
+</div>
+
+<div class="flex">
+    <div>
+    <label for="email" style="font-weight: 900;">Email </label><br>
+    <input type="email"placeholder="Enter Name" id='email' name="email">
+</div>
+<div class="left">
+    <label for="contact" style="font-weight: 900;">Contact </label><br>
+    <input type="tel"placeholder="Enter number" id='contact' required name="contact">
+</div>
+    </div>
+    <div class="flex">
+        <div>
+    <label for="pass" style="font-weight: 900;">Password </label><br>
+    <input type="password"placeholder="Enter password" id='pass' name="pass">
+    <p id="made"></p>
+</div>
+<div class="left">
+    <label for="cpass" style="font-weight: 900;">Confirm password </label><br>
+    <input type="password"placeholder="Confirm password" id='cpass' name="cpass">
+</div>
+</div>
+    <div style="font-weight: 900;">Gender</div>
+    <input type="radio" id="male" name="gender" value="Male" checked>
+    <span>Male</span>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+    <input type="radio" id="others" name="gender" value="Others">
+    <label for="others">Others</label>
+    <br/><br/><br/>
+ <button style="width: 105.4%; height: 40px; font-size: larger; border-radius: 20px; background-color: #88b7e1; cursor: pointer;" id="check">Submit</button>
+  <p>Already havean account? <a href="./signin .php" target="_blank">Sign in</a></p> 
+    </form>
+    <script>
+        warn();
+
+    </script>
+</div>
+</span> 
+</body>
+<html>

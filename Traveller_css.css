@@ -1,0 +1,209 @@
+body{
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+}
+.menu{
+   
+    
+    background-color: rgb(81, 123, 224);
+    margin: 0px;
+    border: 2px solid  rgb(81, 224, 193);
+    padding-bottom: 150px;
+    
+}
+.nav_elements{
+    padding-left: 100px;
+    padding-top: 30px;
+}
+.nav_elements>a{  
+  
+  padding: 10px;
+  margin: 40px;
+
+
+}
+.nav_elements>a{
+  
+  border: 2px solid black;
+  border-radius: 90px;  
+  background-color: rgb(200, 224, 245);
+  padding: 15px;
+
+
+}
+.login{
+    border: 2px solid rgb(230, 222, 222); 
+    
+
+    float: inline-end;
+    margin-bottom: 0px;
+    background-color: white;
+    margin-right: 150px;
+    margin-top: 30px;
+    padding: 8px;
+  }
+#search{
+background: url(location-question.png) no-repeat;
+background-size: 25px;
+background-position: 95% 40%;
+background-color: rgb(255, 255, 255); 
+margin-left: 18px;
+border-radius: 90px;
+padding:10px;
+padding-right:15px;
+padding-left:20px;
+font-size: large;
+     }
+    .arrow{
+     
+   
+     
+     display: inline-block;
+     padding: 8px;
+   
+     
+      }
+      #arrow_before{
+        margin-left: 405px;
+        margin-top: -32px;
+       
+      }
+    .red_arrow1{
+        border: solid rgb(230, 136, 136);
+        border-width: 0 5px 5px 0;
+        transition: 1s;
+        transform: rotate(-45deg);
+    }
+    
+    .red_arrow2{
+        border: solid rgb(228, 93, 93);
+        border-width: 0 5px 5px 0;
+        transition: 2s;
+        transform: rotate(-45deg);
+    }
+
+    .red_arrow3{
+        border: solid rgb(255, 0, 0);
+        border-width: 0 5px 5px 0;
+        transition: 3s;
+        transform: rotate(-45deg);
+    }
+    .green_arrow1{
+     border: solid rgb(161, 235, 210);
+        border-width: 0 5px 5px 0;
+        transition: 3s;
+        transform: rotate(-45deg);   
+    }
+    .green_arrow2{
+        border: solid  rgb(76, 240, 185);;
+        border-width: 0 5px 5px 0;
+        transition: 3s;
+        transform: rotate(-45deg);  
+
+    }
+    .green_arrow3{
+        border: solid  rgb(0, 248, 165);;
+        border-width: 0 5px 5px 0;
+        transition: 3s;
+        transform: rotate(-45deg);  
+    }
+    .date{
+        width: 212.667px; 
+        height: 22px;
+background-color: rgb(255, 255, 255); 
+margin-left: 50px;
+border-radius: 90px;
+padding:10px;
+padding-right:15px;
+padding-left:20px;
+    }
+    #arrow_after{
+        margin-left: 760px;
+        margin-top: -32px;
+       
+      }
+    .persons{
+        padding: 12px;
+        border-radius: 90px;
+        background-color: rgb(255, 255, 255);
+        padding-right: 0px;
+  padding-left: 10px;
+  cursor: pointer;
+    }
+
+    #persons_block{
+        border: 2px solid #5f97df45;
+  padding: 10px;
+  margin-left: -50px;
+  margin-right: 200px;
+  margin-top: 10px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px 5px #6a4fe262;
+  display: none;
+    }
+    .persons_option{
+        margin: 20px;
+  margin-right: 0px;
+  font-size: larger;
+    }
+    
+    .add_persons{
+        float: right;
+  width: 100.4333px;
+  height: 30px;
+  border: 2px solid;
+  font-size: 25px;
+  margin-top: -6px;
+  border-radius: 20px;
+    }
+    .person_p{
+        margin-top: 19.2px;
+        margin-left: 5px;
+        display: inline;
+    }
+.persons_span{
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 3px;
+  cursor: pointer;
+  user-select: none; 
+}
+#search_logo{
+  margin-top: -50px; 
+  margin-left: 270px; 
+  width: 50px; 
+  height: 50.5px;
+  border-radius: 10px;
+}
+@keyframes animte {
+  from{box-shadow: 0px 0px 4px 5px rgba(218, 215, 142, 0.274); border-radius: 10px;}
+  to{box-shadow: 0px 0px 4px 6px rgb(240, 204, 5); border-radius: 10px;}
+}
+#child{
+  margin-left: 150px;
+  width: 249px;
+  margin-top: -10px;
+  position: absolute;
+  z-index: 2;
+}
+
+#child ul{
+  list-style: none;
+  padding-left: 0px;
+}
+.selecting{
+cursor:pointer;
+width: 100%;
+height: 35px;
+background-color: #f5e7f9;
+font-size: large;
+}
+
+.selecting:hover{
+  background-color: aqua;
+}
+
+

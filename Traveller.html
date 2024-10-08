@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Travellers</title>
+            <link rel="stylesheet" href="Traveller_css.css">
+            <script src="demo.js"></script>
+            <script src="Traveller_js.js"></script>
+        </head>
+        <body>
+            <header class="menu">
+                                
+                <span><h1 style="color:white; margin-left: 145px; margin-top: 10px; padding-top: 20px; display:inline-flex; font-family: Arial, Helvetica, sans-serif;">Book my trip</h1></span>
+                <span class ="login" > 
+                <a href="http://localhost:8080/Travel/register.html">sign up</a>
+                /
+                <a href="http://localhost:8080/Travel/sign_in.html">sign in</a>
+                
+            </span>
+            
+<nav style="padding:30px;width: 1200px;height: 5px;">
+    <div class="nav_elements">
+    <a href="http://localhost:8080/Travel/stays demo.html" ><img src="hotel.png" height="4%" width="2.5%" style="margin-right: 7px;margin-bottom:-5px;">Stays</a>
+    <a href="#" ><img src="travelling.png" height="4%" width="2.5%"style="margin-right: 7px;margin-bottom:-5px;">Flights</a>
+    <a href="#" ><img src="car.png" height="4%" width="3%"style="margin-right: 7px; margin-bottom:-10px;">Cars Rentals</a>
+    <a href="#" ><img src="taxi.png" height="3%" width="2.5%" style="margin-right: 7px;margin-bottom:-4px;">Taxi Booking</a>
+    <a href="http://localhost:8080/Travel/places.html" ><img src="earth.png" height="3%" width="2.5%" style="margin-right: 7px;margin-bottom:-7px;">Find places</a>
+    </div>
+</nav>
+
+        </header>
+            
+            <div style="margin-left: 130px; margin-top: -25px; width: 1100px;">
+                <input type="text" placeholder="Where To Go?" class="seek" id="search" onkeyup="mySearchFunction();" onkeydown="this.onkeyup();"  onpaste= "this.onkeyup();"> 
+            </div>
+            <div id="arrow_before">
+                <div class="arrow" id="arrow_1"></div>
+                <div class="arrow" id="arrow_2"></div>
+                <div class="arrow" id="arrow_3"></div>
+            </div>
+            <div style="margin-top:-39px; margin-left:450px;">
+                <input type="date" placeholder="dd/mm/yyyy" class="date" id="check_date" onchange="myDateFunction();">
+            </div> 
+            <div id="arrow_after">
+                <div class="arrow" id="arrow_4"></div>
+                <div class="arrow" id="arrow_5"></div>
+                <div class="arrow" id="arrow_6"></div>
+            </div> 
+            <div style="margin-top:-38px; margin-left:860px;">
+                <button class="persons" onclick="showPersonsBlock()">
+                    <img src="user.png" style="margin-right: 7px; margin-bottom:-5px; width: 20.70001px;
+  height: 20px;">
+                    <span>
+                        <span class="person_1">2</span> <span class="person_1">Adults</span> - <span class="person_1">0</span> <span class="person_1">Children</span> - <span class="person_1">1</span> <span class="person_1">Room</span></span>
+                    <img src="arrow-down.png" style="margin-right: 5px; margin-left: -2px; margin-bottom:-9px; width: 25.70001px; height: 25px;">
+                </button>
+                <div id="search_logo">
+                    <a href="#"><img src="search.png" height="50px" width="50px" style="background-color: #2b2b4d; border-radius: 10px;"></a>
+
+                </div>
+                <div id="persons_block">
+                  <div class="persons_option">
+                    Adults
+                    <div class="add_persons">
+                    <span style="cursor: pointer; margin-left: 2px; padding-left: 10px; padding-right: 10px; user-select: none;" onclick="adultMinus()">-</span>
+                    <p class="person_p">2</p>
+                    <span class="persons_span"  onclick="adultAdd()">+</span>
+                </div >
+                  </div>  
+                  <div class="persons_option">
+                    Children
+                    <div class="add_persons">
+                    <span style="cursor: pointer; margin-left: 2px; padding-left: 10px; padding-right: 10px; user-select: none;" onclick="childMinus()">-</span>
+                    <p class="person_p">0</p>
+                    <span class="persons_span"  onclick="childAdd()">+</span>
+                </div>
+                  </div>
+                  <div class="persons_option">
+                    Room
+                    <div class="add_persons">
+                    <span style="cursor: pointer; margin-left: 2px; padding-left: 10px; padding-right: 10px; user-select: none;" onclick="roomMinus()">-</span>
+                    <p class="person_p">1</p>
+                    <span class="persons_span" onclick="roomAdd()">+</span>
+                </div>
+                  </div>
+                </div>
+                
+            </div> 
+            <div id="child"></div>
+           <iframe src="https://www.visitorlando.com/" style="width: 1345px;height: 900px;"></iframe>
+           <footer style="height: 265px; background-color: rgb(0, 0, 0); text-align: center; font-size: large; color: white; border-top: 10px solid #f9d57f;">
+            <h1>Customer Support</h1>
+            Email: <a href="#">ishanjindal2025@gmail.com</a>
+            <h3> Customer care support :</h3>
+            <h3>+917015529110</h3>
+            <p>+917082811137</p>
+           </footer>
+     <script>
+        mySearchFunction();
+         myDateFunction();
+         getData();
+     </script> 
+</body>
+    </html>
